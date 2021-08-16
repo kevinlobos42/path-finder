@@ -11,7 +11,7 @@ export const dijkstras = (grid, startNode, endNode)=>{
         }
         visitedNodes.push(firstNode)
         firstNode.isVisited=true
-        if(firstNode == endNode) {
+        if(firstNode === endNode) {
             return visitedNodes;
         } 
         updateNeighbors(firstNode,grid)

@@ -122,6 +122,8 @@ function Grid() {
                 const aPath = shortestPath(endNode)
                 visualize(a,aPath)
                 break;
+            default:
+                break;
         }
     }
     const shortestPath = (finish) =>{

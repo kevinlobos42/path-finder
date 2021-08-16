@@ -1,6 +1,4 @@
 import {useState,useEffect} from 'react'
-import {AiOutlineCar} from 'react-icons/ai'
-import {VscDebugStart} from 'react-icons/vsc'
 import '../css/Node.css'
 
 function Node({row,col,isWall,isStart,isEnd, onMouseDown, onMouseEnter, onMouseUp}) {
@@ -19,7 +17,7 @@ function Node({row,col,isWall,isStart,isEnd, onMouseDown, onMouseEnter, onMouseU
             setClasses('')
         }
 
-    })
+    },[isEnd,isWall,isStart])
     return (
         <div
             id={`node-${row}-${col}`}
